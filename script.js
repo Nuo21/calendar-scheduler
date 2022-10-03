@@ -19,6 +19,14 @@ var timeCheck = function(){
 
         //Testing
         console.log(eventTime);
+
+        if (eventTime < currentHour){
+            $(this).addClass("past");
+        } else if (eventTime > currentHour){
+            $(this).addClass("future");
+        } else {
+            $(this).addClass("present");
+        }
     })
 }
 
