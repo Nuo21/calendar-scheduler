@@ -41,12 +41,25 @@ $(".saveBtn").on("click", function(){
 
 //Getting localstorage items
 var loadStorage = function(){
+    //Made for loop for the code below to make it cleaner
     for (var i = 9; i <= 17; i++){
-        $("#" + i + "hr").val(localStorage.getItem(i));
+        $("#" + i + "hr " + ".description").val(localStorage.getItem(i + "hr"));
     }
+    
+    /*$("#9hr .description").val(localStorage.getItem("9hr"));
+    $("#10hr .description").val(localStorage.getItem("10hr"));
+    $("#11hr .description").val(localStorage.getItem("11hr"));
+    $("#12hr .description").val(localStorage.getItem("12hr"));
+    $("#13hr .description").val(localStorage.getItem("13hr"));
+    $("#14hr .description").val(localStorage.getItem("14hr"));
+    $("#15hr .description").val(localStorage.getItem("15hr"));
+    $("#16hr .description").val(localStorage.getItem("16hr"));
+    $("#17hr .description").val(localStorage.getItem("17hr"));*/
 
     console.log(localStorage);
 }
+
+
 
 timeCheck();
 loadStorage();
