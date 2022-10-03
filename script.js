@@ -8,6 +8,8 @@ $("#currentDay").html("Today is " + today);
 //Testing
 console.log(today);
 
+
+
 //Check if event is in the past, present, or future
 var timeCheck = function(){
     var currentHour = moment().hour();
@@ -30,4 +32,22 @@ var timeCheck = function(){
     })
 }
 
+//Save button
+$(".saveBtn").on("click", function(){
+    var userEvent = $(this).siblings(".description").val();
+    var userEventHour = $(this).parent().attr("id");
+    localStorage.setItem(userEventHour, userEvent);
+})
+
+//Getting localstorage items
+var loadStorage = function(){
+    for (var i = 9; i <= 17; i++){
+        $("#" + i + "hr").val(localStorage.getItem(i));
+    }
+
+    console.log(localStorage);
+}
+
 timeCheck();
+loadStorage();
+//localStorage.clear();
