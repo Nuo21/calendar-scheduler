@@ -1,2 +1,11 @@
-# calendar-scheduler
-Challenge 5 - Work Day Scheduler
+# <Week 5 Challenge - Work Day Scheduler>
+
+## Description
+
+This is a work day scheduler that contains the typical work day hours of 9AM to 5PM. The user is able to enter in events/to-do's for each hour timeblock and save to their local storage. This app also shows you the current date at the top.
+
+## Screenshot
+
+## Live Deploy Link
+
+https://nuo21.github.io/calendar-scheduler/
