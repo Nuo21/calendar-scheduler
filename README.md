@@ -6,6 +6,8 @@ This is a work day scheduler that contains the typical work day hours of 9AM to 
 
 ## Screenshot
 
+![wdsSS](https://user-images.githubusercontent.com/111789697/193718546-e30669a3-d90f-4eca-b5f3-df4a907c96ea.png)
+
 ## Live Deploy Link
 
 https://nuo21.github.io/calendar-scheduler/
